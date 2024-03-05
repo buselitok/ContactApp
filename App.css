@@ -1,0 +1,51 @@
+.App {
+  display: flex; /*bir elemanın bir esnek konteyner (Flex Container) olmasını sağlar. Flexbox (esnek kutu modeli),bir dizi öğeyi düzenlemek ve hizalamak için kullanılan bir düzen modelidir.*/
+  justify-content: center; /*Bu özellik,Flex Container içindeki elemanların yatay (main axis) hizalamasını belirler. center değeri,elemanları yatay eksende ortalar. */
+  align-items: center; /*Bu özellik,Flex Container içindeki elemanların dikey (cross axis) hizalamasını belirler. center değeri,elemanları dikey eksende ortalar. */
+  min-height: 100vh; /*100vh değeri,viewport'un yüksekliğine eşittir. Yani, ekranın tamamını kaplamak için tasarlanmış bir konteynerin yüksekliğini ifade eder.*/
+}
+#container{
+  width: 400px;
+  background-color: aliceblue;
+  padding: 20px;
+}
+input{
+  margin: 2px;
+  width: 100%;
+  padding: 5px; /* veri girdiğimiz alanlar büyüdü*/
+  box-sizing: border-box; /* containerin içerisindeki inputların genişliği ve yüksekliği oyomatik hesaplanır ve kolayca ortalanır*/
+
+}
+ul,li{
+  margin: 0;
+  padding: 0; /*girdiğimiz verileri sola yaklaştırıyor*/
+  list-style:none; /*ul listeleme yuvarlaklarnı ortadan kaldırır*/
+}
+.list{
+  margin:15px 0; /*Yukardan 15px boşluk veriyor listedeki elemana*/
+}
+
+.list>li{
+  background-color: antiquewhite;
+  padding: 5px;
+  margin-bottom: 3px; /*Liste elemanlarının sınırları daha iyi belli oldu*/
+  /*İsim ve numrayı sağlı sollu ayırır*/
+  display: flex;
+  justify-content:space-between;
+}
+button{
+  margin: 10px;
+  margin-left: 40%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  border: 20%;
+  width: 50px;
+  height: 30px;
+  cursor: pointer; /*tuşun üstüne okla gelince el simgesi çıkıyor*/
+}
+h1{
+  display: flex;
+  justify-content: center;
+}
